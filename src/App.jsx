@@ -1,9 +1,19 @@
 import {GlobalStyle} from './styles/global';
-function App() {
+import {Container} from './styles/main';
+import {useState} from 'react';
+const App = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const openSideBar = () =>{
+    setSidebarOpen(true)
+  }
+  const closeSideBar = () =>{
+    setSidebarOpen(false)
+  }
   return (
-    <div className="App">
-     <GlobalStyle/>
-    </div>
+    <Container>
+        <GlobalStyle/>
+        <h1>hello</h1>
+    </Container>
   );
 }
 
