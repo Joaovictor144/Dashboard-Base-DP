@@ -11,7 +11,7 @@ const App = () => {
     setSidebarOpen(false)
   }
   return (
-    <Container>
+    <Container >
         <GlobalStyle/>
         <SideBar openSideBar={openSideBar} closeSideBar={closeSideBar}/>
     </Container>

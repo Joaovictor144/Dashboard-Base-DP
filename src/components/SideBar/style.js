@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const SidebarStyle = styled.div`
+    height: 100vh;
     #sidebar{
         background: #020509;
         grid-area: sidebar;
@@ -8,6 +9,7 @@ const SidebarStyle = styled.div`
         padding:20px;
         -webkit-transition:all 0.5s;
         transition:alt 0.5s;
+        height: 100vh;
     }
     .sidebar_title{
         display:flex;
@@ -20,8 +22,8 @@ const SidebarStyle = styled.div`
         display:flex;
         align-items: center;
     }
-    .sidebar_img >div>img{
-        width: 55px;
+    .sidebar_img > img{
+        width: 120px;
         object-fit:contain ;
         border-radius:50%;
     }
@@ -78,14 +80,30 @@ const SidebarStyle = styled.div`
         color:#e65061;
 
     }
-    .sidebar_logout >a{
+    .sidebar_logout > i{
+        margin-right: 10px;
+        font-size: 18px;
+
+    }
+    .sidebar_logout > a{
         text-decoration:none;
         color:#e65061;
         font-weight: 700;
         text-transform: uppercase;
     }
     .sidebar_responsive{
-        
+        display:inline !important;
+        z-index:9999 !important;
+        left:0 !important;
+        position: absolute;
+    }
+    @media only screen and (max-width:978px){
+        #sidebar{
+            display:none;
+        }
+        .sidebar_title > i{
+                display:inline;
+        }
     }
 `;
 
