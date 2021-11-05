@@ -1,10 +1,10 @@
 import SidebarStyle from './style';
 import logo from '../../assets/logo.png'
 
-const SideBar = ({openSideBar,closeSideBar }) =>{
+const SideBar = ({sidebarOpen,closeSideBar }) =>{
     return(
         <SidebarStyle >
-            <div className={openSideBar ? "sideBar-responsive" : ""} id="sidebar">
+            <div className={sidebarOpen ? "sideBar-responsive" : ""} id="sidebar">
                 <div className="sidebar_title">
                     <div className="sidebar_img">
                         <img src={logo} alt="logo"/>

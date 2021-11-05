@@ -1,7 +1,8 @@
 import {GlobalStyle} from './styles/global';
 import {Container} from './styles/main';
 import {useState} from 'react';
-import SideBar from './components/SideBar'
+import SideBar from './components/SideBar';
+import NavBar from './components/NavBar';
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const openSideBar = () =>{
@@ -13,7 +14,8 @@ const App = () => {
   return (
     <Container >
         <GlobalStyle/>
-        <SideBar openSideBar={openSideBar} closeSideBar={closeSideBar}/>
+        <SideBar sidebarOpen={sidebarOpen} closeSideBar={closeSideBar}/>
+        <NavBar sidebarOpen={sidebarOpen} openSideBar={openSideBar}/>
     </Container>
   );
 }

@@ -23,7 +23,7 @@ const SidebarStyle = styled.div`
         align-items: center;
     }
     .sidebar_img > img{
-        width: 120px;
+        width: 60px;
         object-fit:contain ;
         border-radius:50%;
     }
@@ -36,6 +36,7 @@ const SidebarStyle = styled.div`
     .sidebar_title> i{
         font-size:18px;
         display:none;
+        margin-left: 5px;
     }
     .sidebar_menu > h2{
         color:#3ea175;
@@ -91,7 +92,7 @@ const SidebarStyle = styled.div`
         font-weight: 700;
         text-transform: uppercase;
     }
-    .sidebar_responsive{
+    .sideBar-responsive{
         display:inline !important;
         z-index:9999 !important;
         left:0 !important;
