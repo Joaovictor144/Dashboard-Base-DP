@@ -39,7 +39,7 @@ const SidebarStyle = styled.div`
         margin-left: 5px;
     }
     .sidebar_menu > h2{
-        color:#3ea175;
+        color:#3E68A1;
         font-size:16px;
         margin-top:15px;
         margin-bottom:5px;
@@ -53,11 +53,11 @@ const SidebarStyle = styled.div`
         margin-bottom: 5px;
     }
     .active_menu_link{
-        background: rgba(62,161,117,0.3);
-        color:#3ea175;
+        background: rgba(0,112,255,0.3);
+        color:#0070FF;
     }
     .active_menu_link a {
-        color:#3ea175 !important;
+        color:#0070FF !important;
 
     }
     .sidebar_link > a{
@@ -67,7 +67,7 @@ const SidebarStyle = styled.div`
     }
     .sidebar_link a:focus{
         padding: 7px;
-        background:rgba(62,161,117,0.3) ;
+        background:rgba(0,112,255,0.3) ;
         border-radius:3px;
     }
     .sidebar_link i{
