@@ -34,7 +34,7 @@ Icones: Font Awesome
     // Clonar repositório
     git clone git@github.com:Joaovictor144/REACT-Dashboard-Base-DP.git
     // Acessar diretório
-    cd REACT-Dashboard-Base-DP
+    cd react-dashboard-base
      // Instalar dependências
      yarn
     // Iniciar projeto
