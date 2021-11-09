@@ -8,7 +8,8 @@
 # 🗺  Sobre
 
 Esse projeto foi criado para ser usado como base pra quem quer fazer uma dashboard para usar em seus projetos ou mesmo em produção ,ao decorrer do tempo vou voltar fazendo melhorias nele;<br/>
-Caso não queira clonar só pra olhar eu facilitei pra você: basta clicar aqui -> <a href="https://react-dashboard-base.vercel.app/">Dashboard</a>
+Caso não queira clonar só pra olhar eu facilitei pra você: basta clicar aqui -> <a href="https://react-dashboard-base.vercel.app/">Dashboard(1.0)</a>
+
 
 ## ✍🏻 Ferramentas e Skill
 <br/>
