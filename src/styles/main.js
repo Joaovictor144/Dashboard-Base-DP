@@ -14,5 +14,5 @@ export const Container = styled.div`
         grid-template-rows:0.2fr 3fr ;
         grid-template-areas: "nav" "main";
     
-}
+};
 `

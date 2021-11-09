@@ -3,21 +3,20 @@ import {Container} from './styles/main';
 import {useState} from 'react';
 import SideBar from './components/SideBar';
 import NavBar from './components/NavBar';
-const App = () => {
+export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const openSideBar = () =>{
-    setSidebarOpen(true)
-  }
-  const closeSideBar = () =>{
-    setSidebarOpen(false)
-  }
+  const openSideBar = () => {
+    setSidebarOpen(true);
+  };
+  const closeSideBar = () => {
+    setSidebarOpen(false);
+  };
   return (
-    <Container >
-        <GlobalStyle/>
-        <SideBar sidebarOpen={sidebarOpen} closeSideBar={closeSideBar}/>
-        <NavBar sidebarOpen={sidebarOpen} openSideBar={openSideBar}/>
+    <Container>
+      <GlobalStyle />
+      <SideBar sidebarOpen={sidebarOpen} closeSideBar={closeSideBar} />
+      <NavBar sidebarOpen={sidebarOpen} openSideBar={openSideBar} />
     </Container>
   );
-}
+};
 
-export default App;

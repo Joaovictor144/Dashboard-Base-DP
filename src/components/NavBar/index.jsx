@@ -1,6 +1,6 @@
 import Container from './style';
 import avatar from '../../assets/logo.png';
-function NavBar({sidebarOpen,openSideBar}){
+export default function NavBar({sidebarOpen,openSideBar}){
     return(
         <Container>
             <div className="navbar_icon" onClick={() => openSideBar()}>
@@ -8,26 +8,25 @@ function NavBar({sidebarOpen,openSideBar}){
             </div>
 
             <div className="navbar_left">
-                <a href="#">Produtos</a>
-                <a href="#">Usuários</a>
-                <a href="#" className="active_link">Admin</a>
+                <a href="/#">Produtos</a>
+                <a href="/#">Usuários</a>
+                <a href="/#" className="active_link">Admin</a>
             </div>
             
             <div className="navbar_right">
-                <a href="#">
+                <a href="/#">
                     <i className="fa fa-search"></i>
                 </a>
 
-                <a href="#">
+                <a href="/#">
                     <i className="fa fa-clock"></i>
                 </a>
 
-                <a href="#">
+                <a href="/#">
                     <img width="30" src={avatar} alt="avatar" />
                 </a>
             </div>
         </Container>
     )
-}
+};
 
-export default NavBar;
