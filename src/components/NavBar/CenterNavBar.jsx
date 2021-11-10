@@ -33,12 +33,20 @@ export default function CenterNavBar(){
         <div><p>Habilite a localização para melhor uso</p></div>
         
         )
+    }else if(weather === false){
+            return (
+                <MainNav>
+                    <p>Carregando informações</p>
+                </MainNav>
+                
+            )
+
     }else{
         return(
             <MainNav>
                 <div>
-                    <strong>Clima em {weather.name} </strong>
-                    <p>{weather.main.temp} C° {weather.weather[0].description}</p>
+                    <strong>Clima em {weather['name']} </strong>
+                    <p>{weather['main']['temp']} C° {weather['weather'][0]['description']}</p>
                 </div>
     
             </MainNav>
