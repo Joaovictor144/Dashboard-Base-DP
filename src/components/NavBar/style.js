@@ -69,6 +69,11 @@ export const MainNav = styled.div`
     padding: 0 30px 0 5px;
     
     div{
-        padding: 0 5px
+        padding: 0 5px;
+       
+        strong p{
+            color:#265acc;
+        }
+
     }
 `;

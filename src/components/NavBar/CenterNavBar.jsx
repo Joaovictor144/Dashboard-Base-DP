@@ -29,17 +29,16 @@ export default function CenterNavBar(){
 
 
     if(location === false){
-        alert('Habilite a localização para informação do clima')
         return (
-        <div></div>
+        <div><p>Habilite a localização para melhor uso</p></div>
         
         )
     }else{
-        console.log(weather)
         return(
             <MainNav>
                 <div>
-                    <p>Seu Clima</p>
+                    <strong>Clima em {weather.name} </strong>
+                    <p>{weather.main.temp} C° {weather.weather[0].description}</p>
                 </div>
     
             </MainNav>
