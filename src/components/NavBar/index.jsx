@@ -1,5 +1,6 @@
-import Container from './style';
+import {Container} from './style';
 import avatar from '../../assets/logo.png';
+import CenterNavBar from './CenterNavBar';
 export default function NavBar({sidebarOpen,openSideBar}){
     return(
         <Container>
@@ -11,6 +12,10 @@ export default function NavBar({sidebarOpen,openSideBar}){
                 <a href="/#">Produtos</a>
                 <a href="/#">Usuários</a>
                 <a href="/#" className="active_link">Admin</a>
+            </div>
+            
+            <div className="navbar_center">
+                    <CenterNavBar/>
             </div>
             
             <div className="navbar_right">

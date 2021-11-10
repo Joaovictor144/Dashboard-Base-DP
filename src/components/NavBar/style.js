@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.nav`
+export const Container = styled.nav`
     background:#FFF;
     grid-area: nav;
     height:60px;
@@ -60,5 +60,15 @@ const Container = styled.nav`
         }
     }
 
-`
-export default Container;
+`;
+
+export const MainNav = styled.div`
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 5px;
+    
+    div{
+        padding: 0 5px
+    }
+`;
